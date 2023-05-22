@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+              rel="stylesheet">
+              <link rel="stylesheet" href="style.css">
+              <style>
+
+                html,
+              body {
+                font-family: "Rubik", sans-serif;
+              }
+              
+              /* navigation 
+               - show navigation always on the large screen devices with (min-width:1024)
+              */
+              
+              @media (min-width: 1024px) {
+                .top-navbar {
+                  display: inline-flex !important;
+                }}
+              </style>
+</head>
+<body>
+
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <a href="#" class="p-2 mr-4 inline-flex items-center">
+              <img style="height:70px" src="https://thumbs.dreamstime.com/b/feather-ink-pen-logo-template-vector-196458459.jpg">    
+              <span class="text-xl text-white font-bold uppercase tracking-wide"
+                >PRO WRITING</span
+              >
+            </a>
+            <button
+              class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+              data-target="#navigation" >
+              <i class="material-icons">menu</i>
+            </button>
+            <div
+              class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+              id="navigation"
+            >
+              <div
+                class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto"
+              >
+                <a
+                  href="home"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span>Home</span>
+                </a>
+                <a
+                  href="about"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span style="color: aliceblue;">About</span>
+                </a>
+                <a
+                  href="grammar_home"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span>Grammar</span>
+                </a>
+                <a
+                  href="summarize"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span>Summarization</span>
+                </a>
+                <a
+                  href="sent_correct"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span>Spell Checker</span>
+                </a>
+                <a
+                  href="/"
+                  class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+                >
+                  <span>Login</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+    <h1 style="font-size: larger;font: bolder; "></h1>
+    <!-- This is an example component -->
+    <h1 style="font-size:25px;margin-top: 20px;">This is the about page for our ProWriting Companion.</h1>
+<div style="margin-top: 50px;" class='flex items-center justify-center min-h-screen from-teal-100 via-teal-300 to-teal-500 bg-gradient-to-br'>
+    <div class='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl'>
+       
+        <div class='max-w-md mx-auto space-y-6'  >  
+      <div class='text-base leading-7'>
+       
+                <p class='font-medium text-black-700 ' style="justify-content: center;font-style:italic;padding-left: 14%;font-size: 20px;"><b> FEATURES OF OUR APPLICATION</b></p>
+                <br>
+                <p class='font-small text-gray-700' >We have included features like summarizing a paragraph,spell checking and Grammar correction.</p>
+            </div>
+    
+            <div class='text-base leading-7'>
+                <p class='font-medium text-black-700'><b>SUMMARIZING A PARAGRAPH</b> </p>
+             
+                <p class='font-small text-gray-700'>A larger format of Paragraph will be summarized to a shorted format.</p>
+            </div>
+    
+            <div class='text-base leading-7'>
+                <p class='font-medium text-black-700'><b> SPELL CHECKER</b></p>
+             
+                <p class='font-small text-gray-700'>A corrected spelling of a word which were given wrong would be corrected</p>
+            </div>
+    
+            <div class='text-base leading-7'>
+                <p class='font-medium text-black-700'><b>GRAMMAR CORRECTOR</b> </p>
+                <p class='font-small text-gray-700'>The sentence with grammar error would be corrected.</p>
+            </div>
+    
+            <a target='_blank' href='https://tailwindcomponents.com' class='block w-full px-4 py-2 font-medium tracking-wide text-center text-white capitalize transition-colors duration-300 transform bg-teal-400 rounded-md hover:bg-teal-500 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                Go Back to Tailwind Components
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

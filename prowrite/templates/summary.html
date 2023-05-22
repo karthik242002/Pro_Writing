@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #090f4f;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: #d5e0ea;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 35PX;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .points-list {
+            list-style-type: disc;
+            padding: 0 0 0 20px;
+        }
+
+        .points-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: aliceblue;margin-top: 30px;margin-left: 5%;">SUMMARY</h1>
+
+    <div class="container" >
+        
+        <div class="card" style="width: fit-content;">
+            <h1 class="card-title">Summary</h1>
+            
+            <ul class="points-list">
+                {% for sentence in summary %}
+                    <li>{{ sentence }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

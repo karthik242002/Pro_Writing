@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div style="display: flex;margin-left: 30%;">
+    <img style="width: 350px;margin-left: -64%;margin-top: 40%;" src="https://media.istockphoto.com/id/1166069427/vector/kid-with-learning-difficulties.jpg?s=612x612&w=0&k=20&c=30QEQ6rEnYiuUI7KH13P1O_stxAoy-Try-7ukBLjDCI=" alt="">
+<div class="row" style="margin-right: 12%;width: 500px;">
+    <div>
+    <div class="col s12 center-align">
+        <h4><B> Correct Spelling</B></h4>
+    </div>
+</div>
+<br><br>
+<div class="divider"></div>
+<br><br>
+<div class="row">
+    <form class="col s12 center-align" action="/sent_correct" method="post">
+        <div class="row">
+            <div class="input-field col s8 offset-s2">
+                <i class="material-icons prefix">link</i>
+                <input id="sent" type="text" name="SENT" >
+                <label for="sent" >Enter Word</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              
+  <button class="btn waves-effect waves-light btn-large  accent-2" style="background-color: #142b80;;" type="submit" name="submit" value="submit">
+                    Submit
+                </button>
+  
+          
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col-sm-9">
+            <textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+        </div>
+    </div>
+
+</form>
+
+
+</div>
+</div>
+
+</div>
+{% endblock %}

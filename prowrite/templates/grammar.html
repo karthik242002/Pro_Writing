@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grammar Correction</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+          /* background-image: url(https://img.freepik.com/premium-vector/blue-pastel-colorful-gradient-background-templates-design-colorful-concept-light-blue-pink-yellow_293525-1102.jpg); */
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #090f4f;
+        }
+
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+           margin-top: 50px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.1),#1e40af); */
+           background-color: #A7C7E7;
+        }
+
+        .card h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card textarea {
+            width: 95%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .card input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #142b80;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .card h2 {
+            margin-top: 20px;
+            color: #0c1447;
+        }
+        p{
+            color: #0c1447;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: aliceblue;">Grammar Check</h1>
+    <div style="display: flex;">
+       
+    <img style="display: flex; height: 400px;width: 45%;margin-top: 5%;margin-left: 3%;" src="https://images.ctfassets.net/1e6ajr2k4140/3KFEUiUcUTGaKkWkQPwXM7/f98aaefde8c3575fe32d8dce0d02f31a/blog1-readability.png" alt="">
+
+    <div class="card" style="margin-left: 5%;width: 700px;border-radius: 5%;margin-top: 60px;">
+        <h1>Grammar Correction</h1>
+        <form action="/grammar" method="POST">
+            <textarea name="text" placeholder="Enter a sentence"></textarea>
+            <input type="submit" value="Correct Grammar">
+        </form>
+        {% if result %}
+        <h2>Corrected Sentence:</h2>
+        <p>{{ result }}</p>
+        {% endif %}
+    </div>
+
+</div>
+</body>
+
+</html>
